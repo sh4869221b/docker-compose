@@ -13,10 +13,3 @@ services:
         environment:
             STAGE: 'production' # 'production' 'staging' 'local'
             FORCE_RENEW: 'true'
-        networks:
-            - default
-            - gitea_default
-
-networks:
-    gitea_default:
-        external: true
